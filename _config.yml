@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Random discoveries around programming, software development
   and life.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://sakhnik.com"
+url: "http://sakhnik.com.ua"
 twitter_username: sakhnik
 github_username:  sakhnik
 
