@@ -11,6 +11,8 @@ github_username:  sakhnik
 # Build settings
 markdown: kramdown
 theme: minima
+google_analytics: UA-86803861-1
+
 gems:
   - jekyll-feed
 exclude:
