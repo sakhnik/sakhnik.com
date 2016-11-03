@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello, world!"
 date:   2016-11-01 07:35:33 +0200
-categories: web life
+tags: web life
 ---
 I feel I need to carefully write my steps on configuring development
 environment or system instead of keeping everything in my head. Let me try to
