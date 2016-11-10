@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Running Windows 7 in QEMU KVM"
+date:   2016-11-10 07:40:17 -0500
+tags: kvm win
+---
+
+When I needed to have portable win7 installation for my work at Luxoft,
+suitable running on my
+[Xiaomi Mi Notebook Air](http://xiaomi-mi.com/notebooks/xiaomi-mi-notebook-air-125-silver),
+I decided to use [KVM](http://www.linux-kvm.org/page/Main_Page).
+Many benchmarks found in the web showed that it would be really good.
+However, it took a while to figure out usable deployment.
+
+The best manual I found in the Arch Wiki: [QEMU](https://wiki.archlinux.org/index.php/QEMU).
+It's detailed enough to go through it from end to end to decide what
+options would serve best. Thus, I ended up using virtio for most hardware
+and QXL for graphics. Finally, [SPICE](http://www.linux-kvm.org/page/SPICE)
+was what turned user experience into real pleasure with proper key grabbing,
+clipboard exchange etc.
+
+Without further ado, there is my launch script:
+[win7_64](https://bitbucket.org/sakhnik/win7_64).
+
+![Windows7 in QEMU KVM]({{ site.url }}/assets/2016-11/win7_64.png)
