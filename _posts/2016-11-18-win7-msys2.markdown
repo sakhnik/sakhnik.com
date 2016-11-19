@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Unix in Windows 7"
+date:   2016-11-18 20:23:35 -05:00
+tags: win msys unix
+---
+
+> If people knew `grep`, `sed`, and `awk`, there wouldn't have appeared
+> many good and beautiful programs.
+
+Let's face it, after 9 years on linux exclusively, I feel helpless in windows.
+Navigation, search, editing, and processing files is very easy and natural
+in unix: you may know just
+[few commands](http://freeengineer.org/learnUNIXin10minutes.html), and they
+way to build [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)) out of
+them.
+
+Fortunately, I remembered that I used to utilize
+[MSYS](http://www.mingw.org/wiki/MSYS) in the past.
+So I tried to install it this time. Surprisingly, it comes with famous
+[pacman](https://wiki.archlinux.org/index.php/pacman) as a package manager. So
+finally I felt like home: `zsh`, `tmux`, `mc` and `vim` are available in their
+repository and practically work like in linux.
+
+Consequences:
+
+* I can stay really productive now concentrating on product development
+* I removed bunch of beautiful, but useless programs like [Far
+   manager](https://www.farmanager.com/), [console
+   emulator](https://conemu.github.io/), archiver etc
+* I can now easily switch between linux and windows environments for
+cross-platform development 
+* I had to abandon QEMU KVM, because apparently VirtualBox handles MSYS's
+[mintty](https://mintty.github.io/) much better.
+
+![MSYS2 in Windows7]({{ site.url }}/assets/2016-11/msys2.png)
