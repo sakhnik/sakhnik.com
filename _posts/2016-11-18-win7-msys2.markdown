@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Unix in Windows 7"
+ref:    unix-win7
+lang:   en
 date:   2016-11-18 20:23:35 -05:00
 tags:   win msys unix
 ---

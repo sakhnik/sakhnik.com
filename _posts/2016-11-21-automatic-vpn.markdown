@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Automation of a VPN client"
+ref:    ike-expect
+lang:   en
 date:   2016-11-21 22:47:41 +02:00
 tags:   unix cli expect systemd
 ---

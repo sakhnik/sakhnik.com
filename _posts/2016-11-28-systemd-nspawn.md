@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Linux containers with systemd-nspawn"
+ref:    systemd-nspawn
+lang:   en
 date:   2016-11-28 22:27:49 +02:00
 tags:   linux virt systemd
 ---

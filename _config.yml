@@ -1,8 +1,16 @@
-title: Abstracts
+title:
+  en: Abstracts
+  uk: Конспекти
 email: sakhnik@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Random discoveries around programming, software development
-  and life.
+description:
+  en: Random discoveries around programming, software development and life.
+  uk: Різні відкриття у програмуванні, розробці програмного забезпечення і житті.
+index:
+  en:
+  uk: index.uk.html
+feed:
+  en: /feed.xml
+  uk: /feed.uk.xml
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sakhnik.com"
 twitter_username: sakhnik

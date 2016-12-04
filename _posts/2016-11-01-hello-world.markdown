@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Hello, world!"
+ref:    hello
+lang:   en
 date:   2016-11-01 07:35:33 +0200
-tags: web life
+tags:   web life
 ---
+
 I feel I need to carefully write my steps on configuring development
 environment or system instead of keeping everything in my head. Let me try to
 publish my notes to the web. Hope, search engines will pick them up eventually.
