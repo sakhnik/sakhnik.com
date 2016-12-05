@@ -4,7 +4,7 @@ title:  "Компактне розгортання YouCompleteMe"
 ref:    compact-ycm
 lang:   uk
 date:   2016-11-03 08:45:17 +0200
-tags:   vim ycm c++
+tags:   vim ycm cpp
 ---
 
 Кмітливе доповнення коду C++ найкраще зроблено в
