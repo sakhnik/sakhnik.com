@@ -4,7 +4,7 @@ title:  "Unit testing in C++"
 ref:    cpp-catch
 lang:   en
 date:   2016-12-03 23:44:02 +02:00
-tags:   cpp test
+tags:   c++ test
 ---
 
 I tried two frameworks in the previous projects:
