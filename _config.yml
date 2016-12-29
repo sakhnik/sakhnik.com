@@ -6,7 +6,7 @@ description:
   en: Random discoveries around programming, software development and life.
   uk: Різні відкриття у програмуванні, розробці програмного забезпечення і житті.
 index:
-  en:
+  en: index.html
   uk: index.uk.html
 feed:
   en: /feed.xml
