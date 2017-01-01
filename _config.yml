@@ -11,12 +11,23 @@ index:
 feed:
   en: /feed.xml
   uk: /feed.uk.xml
-langname:
-  en: English
-  uk: Українська
-langicon:
-  en: /assets/united-kingdom-flag-icon-32.png
-  uk: /assets/ukraine-flag-icon-32.png
+
+i18n:
+  langname:
+    en: English
+    uk: Українська
+  langicon:
+    en: /assets/united-kingdom-flag-icon-32.png
+    uk: /assets/ukraine-flag-icon-32.png
+  posts:
+    en: Posts
+    uk: Публікації
+  subscribe:
+    en: subscribe
+    uk: підписатися
+  via:
+    en: via
+    uk: через
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sakhnik.com"

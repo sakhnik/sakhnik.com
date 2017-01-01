@@ -1,5 +1,5 @@
 ---
-layout: home.uk
+layout: home
 lang:   uk
 ref:    index
 ---

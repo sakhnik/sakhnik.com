@@ -18,14 +18,14 @@
         {% assign pages=site.pages | where:"ref",page.ref %}
         {% for doc in pages %}
           {% if doc.lang != page.lang %}
-            <a class="page-link" href="{{ doc.url }}" title="{{ site.langname[doc.lang] }}"><img src="{{ site.langicon[doc.lang] }}" alt="{{ site.langname[doc.lang] }}" width="32px"></a>
+            <a class="page-link" href="{{ doc.url }}" title="{{ site.i18n.langname[doc.lang] }}"><img src="{{ site.i18n.langicon[doc.lang] }}" alt="{{ site.i18n.langname[doc.lang] }}" width="32px"></a>
           {% endif %}
         {% endfor %}
 
         {% assign posts=site.posts | where:"ref",page.ref %}
         {% for doc in posts %}
           {% if doc.lang != page.lang %}
-            <a class="page-link" href="{{ doc.url }}" title="{{ site.langname[doc.lang] }}"><img src="{{ site.langicon[doc.lang] }}" alt="{{ site.langname[doc.lang] }}" width="32px"></a>
+            <a class="page-link" href="{{ doc.url }}" title="{{ site.i18n.langname[doc.lang] }}"><img src="{{ site.i18n.langicon[doc.lang] }}" alt="{{ site.i18n.langname[doc.lang] }}" width="32px"></a>
           {% endif %}
         {% endfor %}
 
