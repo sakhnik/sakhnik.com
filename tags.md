@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: tagcloud
 title:  Tags
 ref:    tags
 lang:   en
 order:  1
 ---
-
-{% include tagcloud.html %}
