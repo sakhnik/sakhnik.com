@@ -29,6 +29,8 @@ i18n:
     en: via
     uk: через
 
+custom_paginate: 5
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sakhnik.com"
 twitter_username: sakhnik
