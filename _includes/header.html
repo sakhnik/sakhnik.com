@@ -15,19 +15,19 @@
 
       <div class="trigger">
 
-        {% assign pages=site.pages | where:"ref",page.ref %}
-        {% for doc in pages %}
-          {% if doc.lang != page.lang %}
-            <a class="page-link" href="{{ doc.url }}" title="{{ site.i18n.langname[doc.lang] }}"><img src="{{ site.i18n.langicon[doc.lang] }}" alt="{{ site.i18n.langname[doc.lang] }}" width="32px"></a>
-          {% endif %}
-        {% endfor %}
+        {% assign other_lang = site.switch_lang[page.lang] %}
 
-        {% assign posts=site.posts | where:"ref",page.ref %}
-        {% for doc in posts %}
-          {% if doc.lang != page.lang %}
-            <a class="page-link" href="{{ doc.url }}" title="{{ site.i18n.langname[doc.lang] }}"><img src="{{ site.i18n.langicon[doc.lang] }}" alt="{{ site.i18n.langname[doc.lang] }}" width="32px"></a>
-          {% endif %}
-        {% endfor %}
+        {% assign refs=site.pages | where:"ref",page.ref %}
+        {% assign doc=refs | where:"lang",other_lang | first %}
+        {% if doc != nil %}
+          <a class="page-link" href="{{ doc.url }}" title="{{ site.i18n.langname[doc.lang] }}"><img src="{{ site.i18n.langicon[doc.lang] }}" alt="{{ site.i18n.langname[doc.lang] }}" width="32px"></a>
+        {% endif %}
+
+        {% assign refs=site.posts | where:"ref",page.ref %}
+        {% assign doc=refs | where:"lang",other_lang | first %}
+        {% if doc != nil %}
+          <a class="page-link" href="{{ doc.url }}" title="{{ site.i18n.langname[doc.lang] }}"><img src="{{ site.i18n.langicon[doc.lang] }}" alt="{{ site.i18n.langname[doc.lang] }}" width="32px"></a>
+        {% endif %}
 
         {% assign pages=site.pages | where:"lang", page.lang | sort:"order" %}
         {% for my_page in pages %}

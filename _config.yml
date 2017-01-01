@@ -12,6 +12,10 @@ feed:
   en: /feed.xml
   uk: /feed.uk.xml
 
+switch_lang:
+  en: uk
+  uk: en
+
 i18n:
   langname:
     en: English
