@@ -11,6 +11,13 @@ index:
 feed:
   en: /feed.xml
   uk: /feed.uk.xml
+langname:
+  en: English
+  uk: Українська
+langicon:
+  en: /assets/united-kingdom-flag-icon-32.png
+  uk: /assets/ukraine-flag-icon-32.png
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sakhnik.com"
 twitter_username: sakhnik

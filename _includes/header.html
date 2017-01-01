@@ -14,11 +14,20 @@
       </span>
 
       <div class="trigger">
-        {% if page.lang != 'en' %}
-          <a class="page-link" href="{{ site.url }}"><img src="{{ site.url }}/assets/united-kingdom-flag-icon-32.png" alt="English" width="32px"></a>
-        {% else %}
-          <a class="page-link" href="{{ site.url }}/index.uk.html"><img src="{{ site.url }}/assets/ukraine-flag-icon-32.png" alt="Ukrainian" width="32px"></a>
-        {% endif %}
+
+        {% assign pages=site.pages | where:"ref",page.ref %}
+        {% for doc in pages %}
+          {% if doc.lang != page.lang %}
+            <a class="page-link" href="{{ doc.url }}" title="{{ site.langname[doc.lang] }}"><img src="{{ site.langicon[doc.lang] }}" alt="{{ site.langname[doc.lang] }}" width="32px"></a>
+          {% endif %}
+        {% endfor %}
+
+        {% assign posts=site.posts | where:"ref",page.ref %}
+        {% for doc in posts %}
+          {% if doc.lang != page.lang %}
+            <a class="page-link" href="{{ doc.url }}" title="{{ site.langname[doc.lang] }}"><img src="{{ site.langicon[doc.lang] }}" alt="{{ site.langname[doc.lang] }}" width="32px"></a>
+          {% endif %}
+        {% endfor %}
 
         {% assign pages=site.pages | where:"lang", page.lang | sort:"order" %}
         {% for my_page in pages %}
