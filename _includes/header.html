@@ -14,6 +14,12 @@
       </span>
 
       <div class="trigger">
+        {% if page.lang != 'en' %}
+          <a class="page-link" href="{{ site.url }}"><img src="{{ site.url }}/assets/united-kingdom-flag-icon-32.png" alt="English" width="32px"></a>
+        {% else %}
+          <a class="page-link" href="{{ site.url }}/index.uk.html"><img src="{{ site.url }}/assets/ukraine-flag-icon-32.png" alt="Ukrainian" width="32px"></a>
+        {% endif %}
+
         {% assign pages=site.pages | where:"lang", page.lang | sort:"order" %}
         {% for my_page in pages %}
           {% if my_page.title %}
@@ -26,11 +32,3 @@
   </div>
 
 </header>
-
-<div class="wrapper" style="text-align: right; line-height: 2em">
-  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-  {% for post in posts %} <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
-
-  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %} <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
-</div>
