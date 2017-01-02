@@ -4,12 +4,12 @@ set -e
 
 export JEKYLL_ENV=production
 
-this_dir=`dirname ${BASH_SOURCE[0]}`
+root_dir=`dirname ${BASH_SOURCE[0]}`/..
 
 mkdir -p _site
 mkdir -p /tmp/sakhnik.com-production
 
-bindfs -n /tmp/sakhnik.com-production $this_dir/_site
+bindfs -n /tmp/sakhnik.com-production $root_dir/_site
 
 cleanup()
 {
