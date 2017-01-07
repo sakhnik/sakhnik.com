@@ -1,0 +1,12 @@
+---
+layout: default
+kind: noheader
+---
+<h2>{{ page.tag }}</h2>
+<ul>
+{% for post in site.posts %}
+  {% if post.lang == page.lang and post.tags contains page.tag %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})</li>
+  {% endif %}
+{% endfor %}
+</ul>
