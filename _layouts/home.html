@@ -10,9 +10,18 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% assign suffix= %}
+        {% if page.lang != en %}
+          {% assign suffix="." | append: page.lang %}
+        {% endif %}
+        {% for t in post.tags %}
+          <span class="post-meta"><a href="tags/{{ t }}{{ suffix }}.html">{{ t }}</a></span>
+        {% endfor %}
 
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+
         {{ post.excerpt }}
+
       </li>
     {% endfor %}
   </ul>

@@ -1,12 +1,11 @@
 module Jekyll
 
   class TagPage < Page
-    def initialize(site, base, dir, tag, lang)
+    def initialize(site, base, dir, tag, name, lang)
       @site = site
       @base = base
       @dir = dir
-      suffix = lang != 'en' ? ".#{lang}" : ""
-      @name = "#{tag}#{suffix}.html"
+      @name = name
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag_page.html')
@@ -26,8 +25,8 @@ module Jekyll
       if site.layouts.key? 'tag_page'
         dir = site.config['tag_dir'] || 'tags'
         site.tags.each_key do |tag|
-          site.pages << TagPage.new(site, site.source, dir, tag, 'en')
-          site.pages << TagPage.new(site, site.source, dir, tag, 'uk')
+          site.pages << TagPage.new(site, site.source, dir, tag, "#{tag}.html", 'en')
+          site.pages << TagPage.new(site, site.source, dir, tag, "#{tag}.uk.html", 'uk')
         end
       end
     end
