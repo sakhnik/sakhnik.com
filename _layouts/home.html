@@ -10,7 +10,7 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+        •
         {% for t in post.tags %}
           <span class="post-meta"><a href="tags/{{ t | append: site.suffix[page.lang] }}">{{ t }}</a></span>
         {% endfor %}
