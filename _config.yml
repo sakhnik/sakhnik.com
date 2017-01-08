@@ -11,6 +11,9 @@ index:
 feed:
   en: /feed.xml
   uk: /feed.uk.xml
+suffix:
+  en: .html
+  uk: .uk.html
 
 switch_lang:
   en: uk
