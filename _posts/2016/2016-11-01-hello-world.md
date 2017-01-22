@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Hello, world!"
-ref:    hello
+ref:    2016-11-01-hello
 lang:   en
 date:   2016-11-01 07:35:33 +0200
-tags:   web life
+tags:   web
 ---
 
 I feel I need to carefully write my steps on configuring development

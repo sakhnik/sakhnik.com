@@ -4,7 +4,7 @@ title:  "Виправлення засинання у Xiaomi Mi Notebook Air"
 ref:    suspend-tpm
 lang:   uk
 date:   2016-12-28 22:38:52 +02:00
-tags:   linux systemd suspend
+tags:   linux systemd
 ---
 
 Спільна проблема моїх ноутбуків: засинання перестає працювати з другого

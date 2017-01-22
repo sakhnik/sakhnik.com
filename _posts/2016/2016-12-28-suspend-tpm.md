@@ -4,7 +4,7 @@ title:  "Fixing suspend in Xiaomi Mi Notebook Air"
 ref:    suspend-tpm
 lang:   en
 date:   2016-12-28 22:38:52 +02:00
-tags:   linux systemd suspend
+tags:   linux systemd
 ---
 
 The common issue in my notebooks: suspend (sleep to RAM) stops working every

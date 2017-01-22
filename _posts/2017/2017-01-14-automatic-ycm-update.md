@@ -4,7 +4,7 @@ title:  "Automatic update of YouCompleteMe"
 ref:    automatic-update-of-ycm
 lang:   en
 date:   2017-01-14 21:12:59 +02:00
-tags:   unix vim ycm automation
+tags:   unix vim
 ---
 
 How to keep YouCompleteMe functional and updated after breaking system

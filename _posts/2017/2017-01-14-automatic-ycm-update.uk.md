@@ -4,7 +4,7 @@ title:  "Автоматичне оновлення YouCompleteMe"
 ref:    automatic-update-of-ycm
 lang:   uk
 date:   2017-01-14 21:12:59 +02:00
-tags:   unix vim ycm automation
+tags:   unix vim
 ---
 
 Як підтримувати YouCompleteMe працюючим і оновленим після несумісних оновлень

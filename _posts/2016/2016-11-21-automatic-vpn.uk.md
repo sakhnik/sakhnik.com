@@ -4,7 +4,7 @@ title:  "Автоматизація клієнта VPN"
 ref:    ike-expect
 lang:   uk
 date:   2016-11-21 22:47:41 +02:00
-tags:   unix cli expect systemd
+tags:   unix systemd
 ---
 
 Треба було з’єднатися сьогодні з VPN. Для цього був потрібен клієнт з відкритим початковим кодом

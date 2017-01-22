@@ -1,33 +1,35 @@
 ---
 layout: post
-title:  "Notes on desktop virtualization"
+title:  "Нотатки про віртуалізацію ПК"
 ref:    2017-01-22-virtualization
-lang:   en
+lang:   uk
 date:   2017-01-22 08:34:40 +02:00
 tags:   virt
 ---
 
-Hardware assisted virtualization shouldn't necessarily be better than dynamic
-translation just because _"hardware"_ in it. My experiments concluded that the
-best solution for desktop virtualization has been VirtualBox so far.
+Віртуалізація з допомогою обладнання не обов’язково краща, ніж динамічна
+трансляція, тільки тому що в ній є _"обладнання"_. Висновок з моїх експериментів
+— найкращим рішенням для віруталізації ПК був поки що
+[VirtualBox](https://www.virtualbox.org/wiki/VirtualBox).
 
-Let's step aside first. When I tried
+Коли я пробував
 [VMWare Player](http://www.vmware.com/products/player/playerpro-evaluation.html), 
-it wouldn't integrate into Arch linux well. It required a more stable kernel to
-build its modules, a custom installer, custom scripts to update, uninstall. Not
-to mention that it's closed source and not free for commercial use.
+він не дуже добре інтегрується у Arch linux. Йому потрібне було стабільне ядро,
+щоб зібрати модулі. У нього власний встановлювач, власні скрипти для поновлення,
+деінсталяції. Вже не кажучи про закритий код і не безкоштовність для комерційного
+вжитку.
 
-Then when I tried [KVM](http://www.linux-kvm.org), I was able to set up
-Windows 7. It was quite usable with [SPICE](https://www.spice-space.org/). But
-then when I needed [msys2](_posts/2016/2016-11-18-win7-msys2.md), it turned out
-that graphics performance became unbearable.
+Коли я пробував [KVM](http://www.linux-kvm.org), мені вдалося встановити
+Windows 7. Її цілком можна було використовувати з [SPICE](https://www.spice-space.org/).
+Але коли мені знадобився [msys2](_posts/2016/2016-11-18-win7-msys2.md),
+виявилося, що графіка стала незносною.
 
-So I got/returned to [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox).
-It's easy to install and maintain in my Arch linux, it offers exellent
-performance of guest Windows, good integration of desktops. Now, unlike KVM,
-it'd be possible to run on a station without CPU supporting virtualization. Hard
-to imagine today though.
+Тож я взяв/повернувся до VirtualBox. Його легко встановити і підтримувати у
+моєму лінуксі Arch, він демонструє чудову продуктивність гостьової Windows,
+хорошу інтеграцію робочих столів. Нарешті, на відміну від KVM, можна було б
+запустити на станції без підтримки віртуалізації процесором. Правда, таке знайти
+сьогодні важко.
 
-One more note to put down: Oracle [binary](https://aur.archlinux.org/packages/virtualbox-bin/)
-package seems to be more stable than OSE one. For instance, mouse pointer
-transparency is handled better.
+Ще одна нотатка: [двійкова](https://aur.archlinux.org/packages/virtualbox-bin/)
+збірка Oracle, здається, краща, ніж редакція з відкритим початковим кодом. Наприклад,
+підтримка прозорості вказівника миші працює краще.

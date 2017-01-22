@@ -4,7 +4,7 @@ title:  "Переносна бібліотека медія з Shotwell"
 ref:    portable-shotwell
 lang:   uk
 date:   2016-11-14 22:08:36 -05:00
-tags:   shotwell portable media
+tags:   media unix
 ---
 
 [Shotwell](https://wiki.gnome.org/Apps/Shotwell) — це чудовий впорядкувальник фото

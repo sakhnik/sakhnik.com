@@ -4,7 +4,7 @@ title:  "Пристосування Jekyll для sakhnik.com"
 ref:    jekyll-customized
 lang:   uk
 date:   2017-01-02 14:11:38 +02:00
-tags:   jekyll web
+tags:   web
 ---
 
 Дві речі було нещодавно додано до сторінок: прапори для зміни мови

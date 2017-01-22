@@ -4,7 +4,7 @@ title:  "Portable media library with Shotwell"
 ref:    portable-shotwell
 lang:   en
 date:   2016-11-14 22:08:36 -05:00
-tags:   shotwell portable media
+tags:   media unix
 ---
 
 [Shotwell](https://wiki.gnome.org/Apps/Shotwell) is a great photo manager for

@@ -4,7 +4,7 @@ title:  "Jekyll customizations for sakhnik.com"
 ref:    jekyll-customized
 lang:   en
 date:   2017-01-02 14:11:38 +02:00
-tags:   jekyll web
+tags:   web
 ---
 
 Two features has been added to the site recently: language change flag

@@ -4,7 +4,7 @@ title:  "Compact deployment of YouCompleteMe"
 ref:    compact-ycm
 lang:   en
 date:   2016-11-03 08:45:17 +0200
-tags:   vim ycm cpp
+tags:   vim unix cpp
 ---
 
 Intelligent code completion in C++ is best done with
