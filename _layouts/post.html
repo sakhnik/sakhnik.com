@@ -8,7 +8,7 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
     • 
     {% for t in page.tags %}
-      <span class="post-meta"><a href="tags/{{ t | append: site.suffix[page.lang] }}">{{ t }}</a></span>
+      <span class="post-meta"><a href="/tags/{{ t | append: site.suffix[page.lang] }}">{{ t }}</a></span>
     {% endfor %}
     </p>
   </header>
