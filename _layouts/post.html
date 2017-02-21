@@ -10,6 +10,7 @@ layout: default
     {% for t in page.tags %}
       <span class="post-meta"><a href="/tags/{{ t | append: site.suffix[page.lang] }}">{{ t }}</a></span>
     {% endfor %}
+    • <span class="post-meta"><a href="https://github.com/sakhnik/sakhnik.com/blob/master/{{ page.path }}">GitHub</a></span>
     </p>
   </header>
 
