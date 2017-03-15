@@ -33,6 +33,7 @@ Google account
 * Disable stock applications like mail, calendar and web browser
 * Configure _cLock_'s calendar to show upcoming events
 * Enable Google Messaging as SMS application
+* Enable Google voice input method
 * Login and authorize instant messaging applications
 * Turn on bluetooth and pair it with _whatever_.
 
