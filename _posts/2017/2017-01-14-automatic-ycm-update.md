@@ -10,7 +10,7 @@ tags:   unix vim
 How to keep YouCompleteMe functional and updated after breaking system
 updates (of course, if YCM is itself stable).
 
-Two annoyances may happen with [compact](_posts/2016/2016-11-03-ycm-deployment)
+Two annoyances may happen with [compact]({% post_url /2016/2016-11-03-ycm-deployment %})
 YouCompleteMe deployment when a system gets updated:
 
 * `ycmd` incompatibility with `libclang`, `boost` or anything else

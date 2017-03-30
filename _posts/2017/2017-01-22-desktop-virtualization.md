@@ -20,7 +20,7 @@ to mention that it's closed source and not free for commercial use.
 
 Then when I tried [KVM](http://www.linux-kvm.org), I was able to set up
 Windows 7. It was quite usable with [SPICE](https://www.spice-space.org/). But
-then when I needed [msys2](_posts/2016/2016-11-18-win7-msys2.md), it turned out
+then when I needed [msys2]({% post_url /2016/2016-11-18-win7-msys2 %}), it turned out
 that graphics performance became unbearable.
 
 So I got/returned to VirtualBox.  It's easy to install and maintain in my Arch
