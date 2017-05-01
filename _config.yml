@@ -47,10 +47,6 @@ github_username:  sakhnik
 markdown: kramdown
 theme: minima
 google_analytics: UA-86803861-1
-disqus:
-  shortname:
-    en: sakhnik
-    uk: sakhnik-uk
 
 gems:
   - jekyll-feed
