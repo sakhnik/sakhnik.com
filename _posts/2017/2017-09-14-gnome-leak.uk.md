@@ -19,10 +19,10 @@ tags:   systemd
 ```bash
 #!/bin/bash
 
-# Kill any gnome-shell process consuming more than 300 Mb of RAM
-ps aux --sort -rss | grep /usr/bin/gnome-shell | awk '{print $2, $6}' | \
+# Убити будь-який процес gnome-shell, який займає більше, ніж 300 Mb пам’яті
+ps -A --sort -rss -o comm,pid,rss | grep '^gnome-shell\s' | awk '{print $2, $3}' | \
     while read -r pid rss; do
-        [[ "$rss" -gt 300000 ]] && kill -KILL $pid
+        [[ "$rss" -gt 300000 ]] && kill -KILL $pid || true
     done
 ```
 
