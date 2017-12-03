@@ -19,6 +19,6 @@ simple, elegant, well-documented, rolling-released
 powerful
 * [GnuPG](https://www.gnupg.org/) — The GNU Privacy Guard (here is my [public
 key](/assets/sakhnik.pub.txt))
-
+* [MSYS2](http://www.msys2.org) — a software distro and building platform for Windows
 
 If you'd like to comment, don't hesitate to drop me an email.
