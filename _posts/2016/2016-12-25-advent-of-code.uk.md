@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Advent of code 2016"
+title:  "Прихід коду 2016"
 ref:    advent-of-code
 lang:   uk
 date:   2016-12-25 22:57:57 +02:00
@@ -14,4 +14,4 @@ tags:   cpp
 
 Чудово, щасливого Різдва!
 
-![Advent of code 2016]({{ site.url }}/assets/2016-12/aoc2016.png)
+![Прихід коду 2016]({{ site.url }}/assets/2016-12/aoc2016.png)
