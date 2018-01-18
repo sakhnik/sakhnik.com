@@ -48,7 +48,7 @@ markdown: kramdown
 theme: minima
 google_analytics: UA-86803861-1
 
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
