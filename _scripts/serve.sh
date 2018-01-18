@@ -15,4 +15,4 @@ cleanup()
 
 trap cleanup EXIT
 
-jekyll serve --incremental
+jekyll serve --watch
