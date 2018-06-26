@@ -7,7 +7,7 @@ date:   2018-06-26 07:28:04 +03:00
 tags:   linux
 ---
 
-Since I've started using [kerberos.io](https://kerberos.io), I had to decide how
+Since I started using [kerberos.io](https://kerberos.io), I had to decide how
 to install it on my [Raspberry Pi
 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) running [Arch
 Linux ARM](https://archlinuxarm.org/). First I
