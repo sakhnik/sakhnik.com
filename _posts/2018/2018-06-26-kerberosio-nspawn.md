@@ -32,9 +32,6 @@ cd /var/lib/machines && systemd-nspawn --bind /dev/video0 -bD raspbian`
 * It took some effort to tune the system, install kerberos.io,
   `libraspberrypi-bin` and other dependencies.
 
-* Unfortunately, `machinectl login` doesn't work due to "Protocol error". So had
-  to install and configure `ssh` to be listening on `localhost:2222`.
-
 * Then I created configuration and service files to start raspbian automatically
   on boot: [the change](https://github.com/sakhnik/alarmpi3-config/commit/d9fa3fd0e2cff76af525972215bc45ce62b1b234).
 
@@ -67,7 +64,6 @@ raspbian(d2c01930a9414d59a6e15d4f40770785)
                   ├─27178 /usr/sbin/cron -f
                   ├─27180 /lib/systemd/systemd-logind
                   ├─27182 /usr/sbin/rsyslogd -n
-                  ├─27183 /usr/sbin/sshd -D
                   ├─27190 /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
                   ├─27192 php-fpm: pool www
                   ├─27193 php-fpm: pool www

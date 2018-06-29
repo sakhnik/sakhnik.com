@@ -32,9 +32,6 @@ cd /var/lib/machines && systemd-nspawn --bind /dev/video0 -bD raspbian`
 * Трішки довелося постаратися, щоб налаштувати систему, встановити kerberos.io,
   `libraspberrypi-bin` і інші залежності.
 
-* На жаль, `machinectl login` не працює через "помилку протоколу". Тож довелося
-  встановити і налаштувати `ssh`, щоб слухав на `localhost:2222`.
-
 * Потім створив конфігураційні і сервісні файли, щоб raspbian запускався
   автоматично разом із основною системою:
   [зміна](https://github.com/sakhnik/alarmpi3-config/commit/d9fa3fd0e2cff76af525972215bc45ce62b1b234).
@@ -68,7 +65,6 @@ raspbian(d2c01930a9414d59a6e15d4f40770785)
                   ├─27178 /usr/sbin/cron -f
                   ├─27180 /lib/systemd/systemd-logind
                   ├─27182 /usr/sbin/rsyslogd -n
-                  ├─27183 /usr/sbin/sshd -D
                   ├─27190 /sbin/agetty --noclear --keep-baud console 115200,38400,9600 vt220
                   ├─27192 php-fpm: pool www
                   ├─27193 php-fpm: pool www
