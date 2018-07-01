@@ -26,11 +26,13 @@ I could find [aconfmgr]({% post_url 2018/2018-01-18-arch-config %}) for Debian!)
 
 * To launch it manually from the command line:
   ```shell
-cd /var/lib/machines && systemd-nspawn --bind /dev/video0 -bD raspbian`
+cd /var/lib/machines && systemd-nspawn --bind /dev/video0 --bind /dev/vchiq -bD raspbian`
 ```
 
 * It took some effort to tune the system, install kerberos.io,
-  `libraspberrypi-bin` and other dependencies.
+  `libraspberrypi-bin` and other dependencies (Update: created a script to
+  prepare the raspbian for chroot automatically:
+  [prepare-raspbian-kerberosio.sh](https://github.com/sakhnik/scripts/blob/master/prepare-raspbian-kerberosio.sh)).
 
 * Then I created configuration and service files to start raspbian automatically
   on boot: [the change](https://github.com/sakhnik/alarmpi3-config/commit/d9fa3fd0e2cff76af525972215bc45ce62b1b234).

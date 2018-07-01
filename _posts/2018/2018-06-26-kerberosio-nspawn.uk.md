@@ -26,11 +26,13 @@ post_url 2017/2017-12-17-qemu-rpi.uk %}) самотужки. Виявилося,
 
 * Щоб його запустити з командного рядка:
   ```shell
-cd /var/lib/machines && systemd-nspawn --bind /dev/video0 -bD raspbian`
+cd /var/lib/machines && systemd-nspawn --bind /dev/video0 --bind /dev/vchiq -bD raspbian`
 ```
 
 * Трішки довелося постаратися, щоб налаштувати систему, встановити kerberos.io,
-  `libraspberrypi-bin` і інші залежності.
+  `libraspberrypi-bin` і інші залежності (оновлено: створив скрипт для встановлення
+  raspbian у chroot автоматизовано:
+  [prepare-raspbian-kerberosio.sh](https://github.com/sakhnik/scripts/blob/master/prepare-raspbian-kerberosio.sh)).
 
 * Потім створив конфігураційні і сервісні файли, щоб raspbian запускався
   автоматично разом із основною системою:
