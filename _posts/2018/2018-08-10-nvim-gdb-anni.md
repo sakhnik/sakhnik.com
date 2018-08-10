@@ -58,14 +58,13 @@ resolve to multiple places in the source code.
 
 To show breakpoint signs in the source code accurately, the plugin would query
 breakpoint locations for the current file on every stop. On the other hand, the
-user should be annoyed with unexpected debugger output, and the debugging
+user shouldn't be annoyed with unexpected debugger output, and the debugging
 history should be rather untouched. It's done separately for different backends.
 
-LLDB allows to spawn a thread, which would run a side channel for commands
-service commands like `info breakpoints`.  GDB doesn't seem to allow that, but
-it's easy to bypass command history with prefix `server`. And the interaction
-with it can be filtered out with a wrapper proxy application. So that's how it
-worked out!
+LLDB allows to spawn a thread, which would run a side channel for service
+commands like `info breakpoints`.  GDB doesn't seem to allow that, but it's easy
+to bypass command history with prefix `server`. And the interaction with it can
+be filtered out with a wrapper proxy application. So that's how it worked out!
 
 
 Careful UI
