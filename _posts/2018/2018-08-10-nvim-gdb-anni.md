@@ -72,18 +72,86 @@ Careful UI
 ----------
 
 It was really easy to mess beyond reparation in the original plugin. Close a
-window, go to another tab while debugging etc.
+window, go to another tab while debugging etc. But now it's a different story.
+The behaviour has been polished, any global state has been isolated to the
+debugging tab. So it's even possible to conduct a couple of independent
+sessions simultaneously.
+
+Keymaps have also been reworked. They are defined and undefined dynamically
+depending on in which window the focus is. So if the debugging tab is left, you
+wouldn't be able to step through the code. Likewise, nvim-gdb's keymaps wouldn't
+mess your own keymaps like [`ctrl-p`](https://github.com/ctrlpvim/ctrlp.vim).
 
 
 Test suite
 ----------
 
-TBD
+This is by far the most useful part to ensure practical stability of the plugin.
+The basic operation is tested carefully for all the backends. One now can be
+sure that whatever change is made wouldn't introduce straight forward
+regressions while the tests are passing.
 
-Continuous integration in Darwin.
+```
+/tmp/nvim-gdb master
+$ ./test/all.sh
+Check for neovim     /usr/bin/nvim
+Check for python3    /usr/bin/python3
+Check for gdb        /home/sakhnik/work/dotfiles/src/.bin/gdb
+Check for lldb       /usr/bin/lldb
+Compiling test.cpp   a.out
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+test_10_quit (test_10_generic.TestGdb)
+=> Verify that the session exits correctly on window close. ... ok
+test_20_generic (test_10_generic.TestGdb)
+=> Test a generic use case. ... ok
+test_30_breakpoint (test_10_generic.TestGdb)
+=> Test toggling breakpoints. ... ok
+test_35_breakpoint_cleanup (test_10_generic.TestGdb)
+=> Verify that breakpoints are cleaned up after session end. ... ok
+test_40_multiview (test_10_generic.TestGdb)
+=> Test multiple views. ... ok
+test_50_interrupt (test_10_generic.TestGdb)
+=> Test interrupt. ... ok
+test_10_detect (test_20_breakpoint.TestBreakpoint)
+=> Verify manual breakpoint is detected. ... ok
+test_20_cd (test_20_breakpoint.TestBreakpoint)
+=> Verify manual breakpoint is detected from a random directory. ... ok
+test_30_navigate (test_20_breakpoint.TestBreakpoint)
+=> Verify that breakpoints stay when source code is navigated. ... ok
+test_10_generic (test_30_pdb.TestPdb)
+=> Test a generic use case. ... ok
+test_20_breakpoint (test_30_pdb.TestPdb)
+=> Test toggling breakpoints. ... ok
+test_30_navigation (test_30_pdb.TestPdb)
+=> Test toggling breakpoints while navigating. ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 97.445s
+
+OK
+
+/tmp/nvim-gdb master 1m 38s
+$
+```
+
+The same tests are run by Travis CI:
+[nvim-gdb](https://travis-ci.org/sakhnik/nvim-gdb).  The very recent addition
+was support for Darwin, so that the continuous integration is run for both Linux
+and Darwin. I was lucky to get it running without any MacOS, by the way!
+
+![Travis CI]({{ site.url }}/assets/2018-08/travis.png)
 
 
 Wrap up
 -------
 
-Frankly speaking, I don't use the debugger that often.
+Frankly speaking, I don't need the debugger that often. But now I have one ready
+in my hands at all times. Surely, the development will continue. New features
+will be added, the existing ones will be polished. Please feel free to open
+issues or offer pull requests if anything is needed.
+
+<script src="https://asciinema.org/a/195787.js" id="asciicast-195787" async></script>
