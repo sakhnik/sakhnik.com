@@ -35,6 +35,9 @@ i18n:
   via:
     en: via
     uk: через
+  more:
+    en: read more
+    uk: читати далі
 
 custom_paginate: 10
 

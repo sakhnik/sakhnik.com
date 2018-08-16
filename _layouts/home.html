@@ -19,6 +19,9 @@ layout: default
 
         {{ post.excerpt }}
 
+        {% if post.excerpt != post.content %}
+          <a href="{{ site.baseurl }}{{ post.url }}">[{{ site.i18n.more[page.lang] }}]</a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
