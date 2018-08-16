@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The first anniversary of nvim-gdb"
-ref:    2017-08-20-nvim-gdb-anni
+ref:    2017-08-10-nvim-gdb-anni
 lang:   en
 date:   2018-08-10 05:40:43 +03:00
 tags:   vim cpp python
