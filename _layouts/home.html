@@ -30,6 +30,6 @@ layout: default
   {% include pagination.html %}
 
   <p class="rss-subscribe">{{ site.i18n.subscribe[page.lang] }}
-    <a href="{{ "/feed.xml" | relative_url }}">{{ site.i18n.via[page.lang] }} RSS</a></p>
+    <a href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">{{ site.i18n.via[page.lang] }} RSS</a></p>
 
 </div>
