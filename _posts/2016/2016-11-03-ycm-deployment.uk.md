@@ -27,7 +27,7 @@ tags:   vim unix cpp
 ![Розмір із системними бібліотеками]({{ site.url }}/assets/2016-11/ycm-clang-system.png)
 
 Все ще чверть гігабайта. Потім відтинаємо істотний шмат: робимо власний сценарій встановлення.
-Скрипт [update-ycm.sh](https://github.com/sakhnik/dotfiles/blob/master/.bin/update-ycm.sh)
+Скрипт [update-ycm.sh](https://github.com/sakhnik/dotfiles/blob/7748834c4eecce9b9b97a6b4aadef638f209e9ef/.bin/update-ycm.sh)
 робить кілька справ:
 
  * Клонує найновішу версію YouCompleteMe з github

@@ -17,7 +17,7 @@ and applied my dotfiles without changing hers, it would be much more convenient.
 Luckily, this is easy to achieve by spawning a new shell with `HOME` pointing to
 my directory. Also I had to develop a script for automated installation of the
 whole zoo of zsh and vim plugins:
-[config.sh](https://github.com/sakhnik/dotfiles/blob/master/config.sh).
+[config.sh](https://github.com/sakhnik/dotfiles/blob/4783ec9468554cfb473c257cd0824f566b8b6e8d/config.sh).
 
 <script type="text/javascript" src="https://asciinema.org/a/SqDcy6d1NUBWF6YUuN5vpA3UL.js" id="asciicast-SqDcy6d1NUBWF6YUuN5vpA3UL" async></script>
 

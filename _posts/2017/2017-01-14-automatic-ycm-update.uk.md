@@ -25,12 +25,12 @@ tags:   unix vim
 [друга](https://github.com/sakhnik/dotfiles/commit/053e0bd1d584b489e393606fbf073996a122fbb4))
 реалізують таке:
 
-* Скрипт [`ycm-check.sh`](https://github.com/sakhnik/dotfiles/blob/master/.bin/ycm-check.sh)
+* Скрипт [`ycm-check.sh`](https://github.com/sakhnik/dotfiles/blob/053e0bd1d584b489e393606fbf073996a122fbb4/.bin/ycm-check.sh)
 щоб перевіряти, чи всі теки із системними заголовками все ще присутні у файловій
 системі, і чи `ycm_core.so` правильно компонується.
-* Скрипт [`ycm-update.sh`](https://github.com/sakhnik/dotfiles/blob/master/.bin/ycm-update.sh)
+* Скрипт [`ycm-update.sh`](https://github.com/sakhnik/dotfiles/blob/053e0bd1d584b489e393606fbf073996a122fbb4/.bin/ycm-update.sh)
 щоб поновлювати розширення і список тек пошуку для `ycm_extra_conf.py`.
-* Скрипт [`yaourt`](https://github.com/sakhnik/dotfiles/blob/master/.bin/yaourt)
+* Скрипт [`yaourt`](https://github.com/sakhnik/dotfiles/blob/053e0bd1d584b489e393606fbf073996a122fbb4/.bin/yaourt)
 щоб перехопити запит на поновлення системи.
 
 Тепер щоразу, як я вводжу `yaourt -Syua`, система перевіряє, чи треба поновити

@@ -18,7 +18,7 @@ tags:   vim
 На щастя, цього легко досягти, запустивши нову оболонку із змінною оточення
 `HOME`, що вказує на мою власну директорію. Також знадобилося створити скрипт
 для автоматизації встановлення всього зоопарку розширень для zsh і vim:
-[config.sh](https://github.com/sakhnik/dotfiles/blob/master/config.sh).
+[config.sh](https://github.com/sakhnik/dotfiles/blob/4783ec9468554cfb473c257cd0824f566b8b6e8d/config.sh).
 
 <script type="text/javascript" src="https://asciinema.org/a/SqDcy6d1NUBWF6YUuN5vpA3UL.js" id="asciicast-SqDcy6d1NUBWF6YUuN5vpA3UL" async></script>
 

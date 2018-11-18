@@ -32,7 +32,7 @@ cd /var/lib/machines && systemd-nspawn --bind /dev/video0 --bind /dev/vchiq -bD 
 * It took some effort to tune the system, install kerberos.io,
   `libraspberrypi-bin` and other dependencies (Update: created a script to
   prepare the raspbian for chroot automatically:
-  [prepare-raspbian-kerberosio.sh](https://github.com/sakhnik/scripts/blob/master/prepare-raspbian-kerberosio.sh)).
+  [prepare-raspbian-kerberosio.sh](https://github.com/sakhnik/scripts/blob/bdfefe2d2f21a83c9224af60628a7e277eff5095/prepare-raspbian-kerberosio.sh)).
 
 * Then I created configuration and service files to start raspbian automatically
   on boot: [the change](https://github.com/sakhnik/alarmpi3-config/commit/d9fa3fd0e2cff76af525972215bc45ce62b1b234).

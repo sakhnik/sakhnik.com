@@ -25,12 +25,12 @@ Two commits ([first](https://github.com/sakhnik/dotfiles/commit/29ec2327b4c29c61
 [second](https://github.com/sakhnik/dotfiles/commit/053e0bd1d584b489e393606fbf073996a122fbb4))
 implement the following:
 
-* The script [`ycm-check.sh`](https://github.com/sakhnik/dotfiles/blob/master/.bin/ycm-check.sh)
+* The script [`ycm-check.sh`](https://github.com/sakhnik/dotfiles/blob/053e0bd1d584b489e393606fbf073996a122fbb4/.bin/ycm-check.sh)
 to check whether all the system include directories are still accessible in the
 file system, and to check whether `ycm_core.so` links properly.
-* The script [`ycm-update.sh`](https://github.com/sakhnik/dotfiles/blob/master/.bin/ycm-update.sh)
+* The script [`ycm-update.sh`](https://github.com/sakhnik/dotfiles/blob/053e0bd1d584b489e393606fbf073996a122fbb4/.bin/ycm-update.sh)
 to update the plugin and include directories for `ycm_extra_conf.py`.
-* The script [`yaourt`](https://github.com/sakhnik/dotfiles/blob/master/.bin/yaourt)
+* The script [`yaourt`](https://github.com/sakhnik/dotfiles/blob/053e0bd1d584b489e393606fbf073996a122fbb4/.bin/yaourt)
 to hook into system update request.
 
 Now every time I type `yaourt -Syua`, the system checks whether YouCompleteMe

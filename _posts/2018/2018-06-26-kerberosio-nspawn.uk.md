@@ -32,7 +32,7 @@ cd /var/lib/machines && systemd-nspawn --bind /dev/video0 --bind /dev/vchiq -bD 
 * Трішки довелося постаратися, щоб налаштувати систему, встановити kerberos.io,
   `libraspberrypi-bin` і інші залежності (оновлено: створив скрипт для встановлення
   raspbian у chroot автоматизовано:
-  [prepare-raspbian-kerberosio.sh](https://github.com/sakhnik/scripts/blob/master/prepare-raspbian-kerberosio.sh)).
+  [prepare-raspbian-kerberosio.sh](https://github.com/sakhnik/scripts/blob/bdfefe2d2f21a83c9224af60628a7e277eff5095/prepare-raspbian-kerberosio.sh)).
 
 * Потім створив конфігураційні і сервісні файли, щоб raspbian запускався
   автоматично разом із основною системою:

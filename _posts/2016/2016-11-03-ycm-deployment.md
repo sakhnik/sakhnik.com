@@ -27,7 +27,7 @@ plugin author, by the way. After adding tuning the build to
 ![Space usage with system libraries]({{ site.url }}/assets/2016-11/ycm-clang-system.png)
 
 Still a quarter of gigabyte. Then drastic cut: implement custom deployment.
-The script [update-ycm.sh](https://github.com/sakhnik/dotfiles/blob/master/.bin/update-ycm.sh)
+The script [update-ycm.sh](https://github.com/sakhnik/dotfiles/blob/7748834c4eecce9b9b97a6b4aadef638f209e9ef/.bin/update-ycm.sh)
 does few things:
 
  * Clones the latest version of YouCompleteMe from github

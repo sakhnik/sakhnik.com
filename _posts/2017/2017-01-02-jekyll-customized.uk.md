@@ -17,9 +17,9 @@ tags:   web
 [існуючого](https://divshot.com/blog/web-development/advanced-jekyll-features/#pagination-with-category),
 дуже легко прибрати зайві частини, пристосувати до моїх вимог.
 Результуючий додаток доступний у
-[github](https://github.com/sakhnik/sakhnik.com/blob/master/_plugins/pagination.rb).
+[github](https://github.com/sakhnik/sakhnik.com/blob/20d6e297366b8415438d4ef19c8fc867333134ae/_plugins/pagination.rb).
 Посилання на сусідні сторінки створюються з допомогою
-[pagination.html](https://github.com/sakhnik/sakhnik.com/blob/master/_includes/pagination.html).
+[pagination.html](https://github.com/sakhnik/sakhnik.com/blob/20d6e297366b8415438d4ef19c8fc867333134ae/_includes/pagination.html).
 
 З множиною сторінок, попередній спосіб перемикання між мовами став незручним, бо
 вже є багато сторінок із заданим `ref`. Тож ми вибираємо тепер тільки перше посилання

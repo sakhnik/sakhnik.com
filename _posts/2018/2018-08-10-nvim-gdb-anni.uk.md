@@ -35,7 +35,7 @@ tags:   vim cpp python
 -------------------
 
 Все почалося з геніальної тонкої обгортки навколо GDB щоб спростити розробку
-Neovim: [neovim_gdb.vim](https://github.com/neovim/neovim/blob/master/contrib/gdb/neovim_gdb.vim).
+Neovim: [neovim_gdb.vim](https://github.com/neovim/neovim/blob/25356f2802b5b98efe7f0d6661979b0a919c4d2d/contrib/gdb/neovim_gdb.vim).
 Виявляється, GDB не завжди можна використати
 (дивись [запит](https://github.com/sakhnik/nvim-gdb/issues/1#issue-296286720)).
 Але та саму ідею можна застосувати до будь-якого налагоджувача з інтерпретатором

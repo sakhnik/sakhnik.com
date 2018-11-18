@@ -17,9 +17,9 @@ Pagination required a custom generator plugin. Starting from an
 [existing](https://divshot.com/blog/web-development/advanced-jekyll-features/#pagination-with-category)
 one, it was trivial to hack off excessive parts, adopt to my requirements.
 The resulting plugin is available in
-[github](https://github.com/sakhnik/sakhnik.com/blob/master/_plugins/pagination.rb).
+[github](https://github.com/sakhnik/sakhnik.com/blob/20d6e297366b8415438d4ef19c8fc867333134ae/_plugins/pagination.rb).
 The pagination links are generated with
-[pagination.html](https://github.com/sakhnik/sakhnik.com/blob/master/_includes/pagination.html).
+[pagination.html](https://github.com/sakhnik/sakhnik.com/blob/20d6e297366b8415438d4ef19c8fc867333134ae/_includes/pagination.html).
 
 With lots of pages, previous way of language switching became broken, because
 there would be many pages with given `ref` now. So we select only the first

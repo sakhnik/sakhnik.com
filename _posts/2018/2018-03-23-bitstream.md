@@ -23,7 +23,7 @@ few conventional techniques to do that:
 Here is another way, which is as efficient as manual code, but superb in terms
 of convenience. Let the compiler know in advance as much as possible, and it
 will be able to generate specific optimized code. Consider the source file
-[BitStream.cpp](https://github.com/sakhnik/cpp-sandbox/blob/master/BitStream.cpp).
+[BitStream.cpp](https://github.com/sakhnik/cpp-sandbox/blob/737132386dc20009be2f1997cbd62302118a7125/BitStream.cpp).
 It defines two template functions:
 
 ```c++

@@ -24,7 +24,7 @@ tags:   cpp
 зручніший. Хай компілятор наперед знає якомога більше, і матиме змогу генерувати
 спеціалізований оптимізований машинний код.
 Розгляньмо файл з початковим кодом
-[BitStream.cpp](https://github.com/sakhnik/cpp-sandbox/blob/master/BitStream.cpp).
+[BitStream.cpp](https://github.com/sakhnik/cpp-sandbox/blob/737132386dc20009be2f1997cbd62302118a7125/BitStream.cpp).
 В ньому визначені дві шаблонні функції:
 
 ```c++
