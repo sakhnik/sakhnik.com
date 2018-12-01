@@ -10,7 +10,7 @@ tags:   cpp
 Я щойно закінчив завдання [advent of code 2016](http://adventofcode.com/2016).
 Моєю метою було виконати всі задачі простим способом на C++, витрачаючи
 якнайменше часу. Мої розв’язки можна знайти на сторінці
-[github](https://github.com/sakhnik/aoc2016).
+[github](https://github.com/sakhnik/adventofcode/tree/b006ddbb8f03c53e9507ee614e94550ebba396cb/2016).
 
 Чудово, щасливого Різдва!
 

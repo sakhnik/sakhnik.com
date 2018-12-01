@@ -10,7 +10,7 @@ tags:   cpp
 I've just completed [advent of code 2016](http://adventofcode.com/2016).
 My goal was to complete all the tasks with quick and dirty C++, spending as
 little time on it as possible. My solutions are available on
-[github](https://github.com/sakhnik/aoc2016).
+[github](https://github.com/sakhnik/adventofcode/tree/b006ddbb8f03c53e9507ee614e94550ebba396cb/2016).
 
 Awesome, and Merry Christmas!
 
