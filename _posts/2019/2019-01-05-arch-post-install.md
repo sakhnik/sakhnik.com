@@ -49,3 +49,4 @@ It's going to be refined constantly.
     - Add the user to the group `video`
     - Test `vainfo`
 - Install `pavucontrol`
+- Configure multimedia keys
