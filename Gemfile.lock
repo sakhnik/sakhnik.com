@@ -68,10 +68,9 @@ DEPENDENCIES
   jekyll (~> 3.3)
   jekyll-feed (~> 0.8)
   minima (~> 2.1)
-  public_suffix
 
 RUBY VERSION
-   ruby 2.5.3p105
+   ruby 2.6.1p33
 
 BUNDLED WITH
-   1.16.1
+   2.0.1
