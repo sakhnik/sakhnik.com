@@ -4,7 +4,7 @@ title:  "Using systemd-nspawn in Arch Linux ARM for Kerberos.io"
 ref:    2018-06-26-alarm-nspawn
 lang:   en
 date:   2018-06-26 07:28:04 +03:00
-tags:   linux
+tags:   linux raspberry
 ---
 
 Since I started using [kerberos.io](https://kerberos.io), I had to decide how

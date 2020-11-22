@@ -4,7 +4,7 @@ title:  "Backup photos from android phone"
 ref:    2017-04-29-photo-sync
 lang:   en
 date:   2017-04-29 21:05:20 +03:00
-tags:   android linux
+tags:   android linux raspberry
 ---
 
 There were few times that I regretted about lost photos:
