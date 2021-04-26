@@ -36,6 +36,8 @@ pip install mypy aqt
 Розширення завантажуються Anki з `~/.local/share/Anki2/addons21`. У моєму
 випадку я просто створив файл `copy_solia/__init__.py` з таким вмістом:
 
+> **_ПРИМІТКА:_**  Створив репозиторій на GitHub для коду: [sakhnik/anki-addons](https://github.com/sakhnik/anki-addons)
+
 ```python
 """."""
 

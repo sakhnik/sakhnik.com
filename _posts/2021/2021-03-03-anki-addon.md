@@ -36,6 +36,8 @@ pip install mypy aqt
 Addons are loaded by Anki from `~/.local/share/Anki2/addons21`. In my case I
 just created `copy_solia/__init__.py` with the following content:
 
+> **_NOTE:_**  Created a GitHub repository for the code: [sakhnik/anki-addons](https://github.com/sakhnik/anki-addons)
+
 ```python
 """."""
 
