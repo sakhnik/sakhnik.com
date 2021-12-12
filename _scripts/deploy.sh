@@ -6,5 +6,4 @@ bundle exec jekyll build
 
 host=iryska
 
-ssh $host 'rm -rf /var/www/sakhnik.com/*'
-rsync -raP --chown 33:33 _site/* $host:/var/www/sakhnik.com
+rsync -raP --delete --chown 33:33 _site/* $host:/var/www/sakhnik.com/
