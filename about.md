@@ -9,6 +9,8 @@ order:  9
 This site is to leave notes for the future about programming, computers,
 operating systems and IT in general.
 
+Here is my resume: [sakhnik.pdf](/assets/sakhnik.pdf).
+
 Here is the list of software I use and recommend:
 
 * [Arch Linux](https://www.archlinux.org/) — best GNU/Linux distribution,

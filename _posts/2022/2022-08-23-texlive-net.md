@@ -11,9 +11,9 @@ I've just realized that I'm not ready to install a multi-gigabyte TexLive
 distribution in the 32&nbsp;GB file system of my Chromebook-based laptop.
 And I need to update the CV sometimes. Luckily, there's a web service available
 exactly for that: [texlive.net](https://texlive.net). It turned out capable of
-rendering my CV using XeLaTeX via their test web page, but it didn't work
-immediately when I tried using their API directly. Here's how I did that
-eventually.
+rendering my [resume](/assets/sakhnik.pdf) using XeLaTeX via their test web
+page, but it didn't work immediately when I tried using their API directly.
+Here's how I did that eventually.
 
 According to their
 [documentation](https://davidcarlisle.github.io/latexcgi/#http-requests), the
