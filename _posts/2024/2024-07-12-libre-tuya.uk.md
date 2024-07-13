@@ -1,24 +1,25 @@
 ---
 layout: post
-title:  Liberating Tuya WiFi plug
+title:  Звільнення WiFi розетки Tuya
 ref:    2024-07-12-liberate-tuya
-lang:   en
+lang:   uk
 date:   2024-07-12 17:32:53 +03:00
 tags:   linux iot esphome libretuya home-assistant
 ---
 
-I use Home Assistant nowadays to manage electric equipment at home. This is a
-remarkable leap forward since my first automation attempts [last year]({%
-post_url /2023/2023-01-01-enter-iot %}). I've been using
-[ESPHome](https://esphome.io) as custom firmware for Sonoff S26 plugs, which
-are based on ubiquitous microcontroller ESP8266. But now it's easier to find
-cheaper Tuya 20A smart sockets for as low as 150₴ (under 4$) a piece. They are
-even equipped with power meter. But the challenge is that they use LibreTiny
-chip BK7231N. Here's what I learnt do.
+Нині я користуюся Home Assistant для керування електричним обладнанням удома.
+Це дивовижний крок вперед з часу моїх перших кроків в автоматизації
+[минулого року]({%
+post_url /2023/2023-01-01-enter-iot.uk %}). Я застосовую
+[ESPHome](https://esphome.io) як альтернативну мікропрограму для розумних
+розеток Sonoff S26, що базуються на поширеному мікроконтролері ESP8266. Але
+зараз простіше знайти дешевші розетки Tuya 20A за 150₴ (нижче 4$) за штуку.
+До того ж вони мають вимірювач спожитої енергії. Але виклик в тому, що вони
+використовують чип LibreTiny BK7231N. Ось що я навчився робити.
 
 First of all, I tried
 [tuya-couldcutter](https://github.com/tuya-cloudcutter/tuya-cloudcutter). While
-it could potentially help with my Aubess 20A plug, it failed with my specific
+it could potentially help with my Aubess 20A switch, it failed with my specific
 version. Probably, Tuya patched the vulnerability. So I have to open the case to
 attach a serial programmer.
 
