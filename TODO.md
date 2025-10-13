@@ -1,0 +1,4 @@
+- lnav
+- scripts for downloading from github
+- ansible for rpis
+- cups
